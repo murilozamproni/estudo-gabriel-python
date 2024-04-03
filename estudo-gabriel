@@ -1,0 +1,113 @@
+#exercicio 1 - lista
+quantidade_pessoas = int(input("Digite a quantidade de pessoas em sua mesa: "))
+valor_total = float(input("Digite o valor total da conta: "))
+
+cada_um = valor_total/quantidade_pessoas
+
+print("O valor de pagamento para cada um vai ser: ",cada_um)
+
+#exercicio 2
+dias = int(input("Digite um quantidade de dias, para ser convertido em ano e meses: "))
+
+ano = dias/365
+mes = dias/30
+dias_restantes = (dias % 365) % 30
+
+
+print(f"{dias} dias equivalem a {ano} anos, {mes} meses e {dias_restantes} dias")
+
+#exercicio 3
+distancia_total = float(input("Digite a distancia percorrida: "))
+gasto_combustivel = float(input("Digite quantos litros de combustivel foram gasto pelo seu veiculo: "))
+
+media = distancia_total/gasto_combustivel;
+
+print(f"seu veiculo gasta em media: {media} por quilometro rodado.")
+
+#exercicio 4
+f = float(input("Digite uma temperatura em fahrenheit: "))
+
+celsius = (f-32) * 5/9
+print("temperatura em fahrenheit é de: ", f)
+print("temperatura em celsius é de: ", celsius)
+
+exercicio 5
+p1 = float(input("Digite qual foi a nota da sua primeira prova: "))
+p2 = float(input("Digite a nota da sua segunda prova: "))
+p3 = float(input("Digite a nota da sua terceira prova: "))
+
+nota_final = p1+p2+p3
+media = nota_final/3
+
+print("Nota da p1: ", p1)
+print("Nota da p2: ", p2)
+print("Nota da p3: ", p3)
+
+if media >= 6:
+    print("Você foi aprovado!")
+else:
+    print("Você foi reprovado!")
+
+print("Sua média final foi: ", media)
+
+#exercicio 7
+num1 = int(input("Digite um numero inteiro: "))
+num2 = int(input("Digite outro numero inteiro: "))
+resultado = num1 + num2
+
+print(resultado)
+
+#exercicio 8
+numero = int(input("Digite um numero inteiro: "))
+
+if numero % 2 == 0:
+      print("Seu número é par!")
+else:
+ print("Seu numero é impar")
+
+#exercicio 9
+idade = int(input("Digite sua idade: "))
+
+if idade <= 12:
+    print ("Criança")
+elif idade <= 18:
+    print ("Adolescente")
+elif idade <= 59:
+    print ("Adulto")
+else:
+    print("Idoso")
+
+ #exercicio 10
+ ano = int(input("Digite um ano: "))
+
+if ano % 4 == 0 and (ano % 100 != 0 or ano % 400 == 0):
+    print(f"O ano {ano} é bissexto")
+else:
+    print(f"O ano {ano} não é bissexto")
+
+#exercicio 11
+peso = float(input("Digite seu peso: "))
+altura = float(input("Digite sua altura: "))
+
+imc = peso / (altura * altura)
+
+print(f"Seu IMC é {imc}")
+
+#exercicio 12
+palavra = input("Digite uma palavra: ")
+
+if palavra == palavra[::-1]:
+    print("è um palindromo!")
+else:
+    print("Não é um palindromo!")
+
+ #exercicio 16
+num1 = int(input("Digite um numero: "))
+num2 = int(input("Digite outro numero: "))
+
+if num1 > num2:
+    print(f"O {num1} é maior que o {num2}")
+elif num1 < num2:
+    print(f"O {num1} é menor que o {num2}")
+else:
+    print("Os dois são iguais")
